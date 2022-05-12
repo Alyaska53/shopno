@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Montserrat:wght@300;400;500;600;700;800;900&family=Raleway:wght@200;300;400;500&display=swap')
 
 $font-stack: 'Montserrat', sans-serif
 $font-color: #505050
@@ -72,3 +72,61 @@ $bg-team: #f9fbfb
     position: absolute
     right: 202px
     bottom: 75px
+
+.about
+  background: $bg-about-us
+  padding-top: 120px
+  & .container
+    height: 865px
+  &--main-title
+    @extend %titles
+    font-size: 38px
+    font-weight: 800
+    color: #000
+    letter-spacing: 1.4px
+  &--secondary-title
+    @extend %titles
+    font-family: 'Merriweather', sans-serif
+    font-size: 18px
+    letter-spacing: 1.1px
+    margin-top: 3px
+  &--info
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    width: 100%
+    max-width: 1032px
+    margin: 142px 0 0 230px
+    &__img
+      position: relative
+      width: 392px
+      height: 484px
+      box-shadow: 0 0 30px #00000026
+      overflow: hidden
+      & img
+        position: absolute
+        left: -415px
+        top: -7px
+        width: 1168px
+    &__text
+      width: 485px
+      & h4
+        @extend %titles
+        font-family: 'Merriweather', sans-serif
+        font-size: 20px
+        letter-spacing: 1.4px
+        text-align: left
+        margin: 2px 0 20px 0
+      & h5
+        @extend %titles
+        font-family: 'Merriweather', sans-serif
+        font-size: 17px
+        letter-spacing: 1.2px
+        text-align: left
+        margin: 32px 0 16px 0
+      & p
+        font-family: 'Raleway', sans-serif
+        font-size: 16px
+        line-height: 28px
+        letter-spacing: 0.8px
+        margin-bottom: 28px
