@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap')
+
+$font-stack: 'Montserrat', sans-serif
+$font-color: #505050
+$bg-dark: #262b2e
+$bg-white: #fff
+$bg-welcome: #eff0f2
+$bg-about-us: #f8fafa
+$bg-team: #f9fbfb
+
+%titles
+  text-align: center
+  text-transform: uppercase
+  color: $font-color
+
+* 
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+  font-family: $font-stack
+  transition: all 0.3s linear
+
+.container
+  width: 100%
+  max-width: 1440px
+  margin: 0 auto
+
+.header 
+  background: $bg-welcome
+  & .container
+    position: relative
+    height: 805px
+    display: flex
+    flex-direction: column
+    align-items: center
+  &--logo
+    position: absolute
+    top: 64px
+    left: 150px
+  &--title
+    @extend %titles
+    margin-top: 305px
+    letter-spacing: 1.8px
+    line-height: 57px
+    font-size: 45px
+    font-weight: bold
+    text-shadow: 0px 9px 10px #0000003d 
+    &__background
+      background: #b2f2ee
+      padding: 0 15px
+  &--button
+    width: 232px
+    height: 53px
+    border: 2px solid $font-color
+    border-radius: 2px
+    margin-top: 138px
+    cursor: pointer
+    & a
+      font-size: 18px
+      font-weight: 600
+      color: $font-color
+      text-align: center
+      text-transform: uppercase
+      text-decoration: none
+      letter-spacing: 1.8px
+    &:hover
+      background: $font-color
+      box-shadow: 0 0 10px #505050cc
+      & a 
+        color: $bg-welcome
+  &--glass
+    position: absolute
+    right: 202px
+    bottom: 75px
