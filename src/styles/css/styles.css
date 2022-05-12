@@ -173,6 +173,7 @@
   width: 370px;
   height: 359px;
   overflow: hidden;
+  cursor: pointer;
 }
 .works--images-container__img .image1 {
   position: absolute;
@@ -181,14 +182,14 @@
   left: -261px;
 }
 .works--images-container__img .image2 {
-  width: 379px;
   position: absolute;
+  width: 379px;
   top: -5px;
   left: -6px;
 }
 .works--images-container__img .image3 {
-  width: 380px;
   position: absolute;
+  width: 380px;
   top: -10px;
   left: -6px;
 }
@@ -205,13 +206,13 @@
   left: -8px;
 }
 .works--images-container__img .image6 {
-  width: 888px;
   position: absolute;
-  top: -12px;
-  left: -261px;
+  width: 790px;
+  top: -3px;
+  left: -215px;
 }
 
-.popup-bg {
+.popup {
   visibility: hidden;
   position: fixed;
   top: 0;
@@ -222,10 +223,23 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
-.popup-bg img {
+.popup--img {
   width: 1200px;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+  cursor: default;
+}
+.popup--close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 20px;
+  cursor: pointer;
+  opacity: 0.5;
+}
+.popup--close:hover {
+  opacity: 1;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -162,19 +162,20 @@ $bg-team: #f9fbfb
       width: 370px
       height: 359px
       overflow: hidden
+      cursor: pointer
       & .image1
         position: absolute
         width: 888px
         top: -12px
         left: -261px
       & .image2
-        width: 379px
         position: absolute
+        width: 379px
         top: -5px
         left: -6px
       & .image3
-        width: 380px
         position: absolute
+        width: 380px
         top: -10px
         left: -6px
       & .image4
@@ -188,15 +189,15 @@ $bg-team: #f9fbfb
         top: -3px
         left: -8px
       & .image6
-        width: 888px
         position: absolute
-        top: -12px
-        left: -261px
+        width: 790px
+        top: -3px
+        left: -215px
 
 
 
   
-.popup-bg
+.popup
   visibility: hidden
   position: fixed
   top: 0
@@ -207,6 +208,19 @@ $bg-team: #f9fbfb
   flex-direction: column
   justify-content: center
   align-items: center
-  & img
+  cursor: pointer
+  &--img
     width: 1200px
     box-shadow: 0 0 30px #00000099
+    cursor: default
+  &--close
+    position: absolute
+    top: 0
+    right: 0
+    padding: 20px
+    cursor: pointer
+    opacity: 0.5
+    &:hover
+      opacity: 1
+
+    
