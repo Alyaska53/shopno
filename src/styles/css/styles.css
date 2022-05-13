@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Montserrat:wght@300;400;500;600;700;800;900&family=Raleway:wght@200;300;400;500&display=swap");
-.works--secondary-title, .works--main-title, .about--info__text h5, .about--info__text h4, .about--secondary-title, .about--main-title, .header--title {
+.team--secondary-title, .team--main-title, .works--secondary-title, .works--main-title, .about--info__text h5, .about--info__text h4, .about--secondary-title, .about--main-title, .header--title {
   text-align: center;
   text-transform: uppercase;
   color: #505050;
@@ -207,6 +207,77 @@
   width: 790px;
   top: -3px;
   left: -215px;
+}
+
+.team {
+  background: #f9fbfb;
+}
+.team .container {
+  padding-top: 89px;
+  padding-bottom: 120px;
+}
+.team--main-title {
+  font-size: 38px;
+  font-weight: 800;
+  color: #000;
+  letter-spacing: 1.4px;
+}
+.team--secondary-title {
+  font-family: "Merriweather", sans-serif;
+  font-size: 18px;
+  letter-spacing: 1.1px;
+  margin-top: 1px;
+}
+.team--people-container {
+  width: 90%;
+  max-width: 1140px;
+  margin: 120px auto 0;
+  display: flex;
+  flex-direction: row;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  row-gap: 13px;
+  column-gap: 15px;
+}
+.team--people-container__img {
+  position: relative;
+  width: 370px;
+  height: 440px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.team--people-container__img img {
+  position: absolute;
+}
+.team--people-container__img .person1 {
+  width: 385px;
+  top: -6px;
+  left: -15px;
+}
+.team--people-container__img .person2 {
+  width: 440px;
+  top: -4px;
+  left: -53px;
+}
+.team--people-container__img .person3 {
+  width: 411px;
+  top: -9px;
+  left: -14px;
+}
+.team--people-container__img .person4 {
+  width: 385px;
+  top: 0px;
+  left: -13px;
+}
+.team--people-container__img .person5 {
+  width: 389px;
+  top: -2px;
+  left: -7px;
+}
+.team--people-container__img .person6 {
+  width: 385px;
+  top: -3px;
+  left: -2px;
 }
 
 .popup {
