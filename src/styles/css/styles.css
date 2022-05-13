@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Montserrat:wght@300;400;500;600;700;800;900&family=Raleway:wght@200;300;400;500&display=swap");
-.team--secondary-title, .team--main-title, .works--secondary-title, .works--main-title, .about--info__text h5, .about--info__text h4, .about--secondary-title, .about--main-title, .header--title {
+.team--people-container__img .person-info h6, .team--secondary-title, .team--main-title, .works--secondary-title, .works--main-title, .about--info__text h5, .about--info__text h4, .about--secondary-title, .about--main-title, .header--title {
   text-align: center;
   text-transform: uppercase;
   color: #505050;
@@ -278,6 +278,89 @@
   width: 385px;
   top: -3px;
   left: -2px;
+}
+.team--people-container__img .person-info {
+  position: absolute;
+  left: 17px;
+  bottom: 16px;
+  width: 335px;
+  height: 241px;
+  background: #6ff6eb;
+  padding: 37px 39px;
+  box-shadow: 5px 5px 5px rgba(231, 231, 231, 0.2588235294);
+  opacity: 0;
+}
+.team--people-container__img .person-info h6 {
+  font-family: "Merriweather", sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  text-align: left;
+  letter-spacing: 1.1px;
+  color: #2b3131;
+  margin-top: 1px;
+  margin-bottom: 17px;
+}
+.team--people-container__img .person-info h6 i {
+  font-family: "Merriweather", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: none;
+  letter-spacing: 1.2px;
+  color: #767776;
+}
+.team--people-container__img .person-info p {
+  color: #2b3131;
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: 0.6px;
+  margin-bottom: 28px;
+}
+.team--people-container__img .person-info::before {
+  content: "";
+  position: absolute;
+  top: -39px;
+  left: 12px;
+  border: 20px solid transparent;
+  border-bottom: 35px solid #6ff6eb;
+  opacity: 0;
+  transition: all 0.3s linear;
+}
+.team--people-container__img .person-info .link {
+  display: flex;
+  flex-direction: row;
+  column-gap: 15px;
+}
+.team--people-container__img .person-info .link a {
+  position: relative;
+}
+.team--people-container__img .person-info .link a:first-child img {
+  position: relative;
+  height: 14px;
+}
+.team--people-container__img .person-info .link a:nth-child(2) img {
+  position: relative;
+  top: -1px;
+  left: 1px;
+  height: 10px;
+}
+.team--people-container__img .person-info .link a:nth-child(3) img {
+  position: relative;
+  height: 12px;
+}
+.team--people-container__img .person-info .link a:nth-child(4) img {
+  position: relative;
+  left: -4px;
+  height: 11px;
+}
+.team--people-container__img .person-info .link a:hover img {
+  height: 30px;
+}
+.team--people-container__img:hover .person-info {
+  opacity: 1;
+}
+.team--people-container__img:hover .person-info::before {
+  opacity: 1;
 }
 
 .popup {
