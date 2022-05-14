@@ -12,10 +12,10 @@ function replaceImage(src, alt) {
 function togglePopUp() {
   if (popUp.classList.contains('show')) {
     popUp.classList.toggle('opacity');
-    setTimeout(() => popUp.classList.toggle('show'), 300);
+    setTimeout(() => popUp.classList.toggle('show'), 200);
   } else {
     popUp.classList.toggle('show');
-    setTimeout(() => popUp.classList.toggle('opacity'), 300);
+    setTimeout(() => popUp.classList.toggle('opacity'), 200);
   }
 }
 
