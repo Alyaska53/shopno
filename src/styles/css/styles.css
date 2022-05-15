@@ -19,6 +19,16 @@
   max-width: 1440px;
   margin: 0 auto;
 }
+@media screen and (max-width: 1440px) {
+  .container {
+    padding: 0 20px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .container {
+    padding: 0 10px;
+  }
+}
 
 .header {
   background: #eff0f2;
@@ -30,10 +40,32 @@
   flex-direction: column;
   align-items: center;
 }
+@media screen and (max-width: 1024px) {
+  .header .container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+}
 .header--logo {
   position: absolute;
   top: 64px;
   left: 150px;
+}
+@media screen and (max-width: 992px) {
+  .header--logo {
+    top: 20px;
+    left: 20px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .header--logo {
+    top: 10px;
+    left: 10px;
+  }
 }
 .header--title {
   margin-top: 305px;
@@ -42,6 +74,28 @@
   font-size: 45px;
   font-weight: bold;
   text-shadow: 0px 9px 10px rgba(0, 0, 0, 0.2392156863);
+}
+@media screen and (max-width: 1440px) {
+  .header--title {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .header--title {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 576px) {
+  .header--title {
+    font-size: 30px;
+    letter-spacing: 1px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .header--title {
+    font-size: 24px;
+    line-height: 40px;
+  }
 }
 .header--title__background {
   background: #b2f2ee;
@@ -57,6 +111,16 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
+}
+@media screen and (max-width: 576px) {
+  .header--button {
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .header--button {
+    margin: 0;
+  }
 }
 .header--button a {
   font-size: 18px;
@@ -79,6 +143,17 @@
   right: 202px;
   bottom: 75px;
 }
+@media screen and (max-width: 1440px) {
+  .header--glass {
+    right: 102px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .header--glass {
+    bottom: 0;
+    right: 0;
+  }
+}
 
 .about {
   background: #f8fafa;
@@ -86,6 +161,12 @@
 }
 .about .container {
   height: 865px;
+}
+@media screen and (max-width: 992px) {
+  .about .container {
+    height: auto;
+    padding-bottom: 100px;
+  }
 }
 .about--main-title {
   font-size: 38px;
@@ -107,6 +188,27 @@
   max-width: 1032px;
   margin: 142px 0 0 230px;
 }
+@media screen and (max-width: 1440px) {
+  .about--info {
+    justify-content: space-around;
+    gap: 20px;
+    margin: 142px auto 0;
+  }
+}
+@media screen and (max-width: 992px) {
+  .about--info {
+    width: 80%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 80px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .about--info {
+    width: 100%;
+  }
+}
 .about--info__img {
   position: relative;
   width: 392px;
@@ -114,14 +216,37 @@
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.1490196078);
   overflow: hidden;
 }
+@media screen and (max-width: 992px) {
+  .about--info__img {
+    width: 100%;
+    height: 300px;
+  }
+}
 .about--info__img img {
   position: absolute;
   left: -415px;
   top: -7px;
   width: 1168px;
 }
+@media screen and (max-width: 992px) {
+  .about--info__img img {
+    left: -351px;
+    top: -66px;
+    left: -380px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .about--info__img img {
+    left: -437px;
+  }
+}
 .about--info__text {
   width: 485px;
+}
+@media screen and (max-width: 992px) {
+  .about--info__text {
+    width: 100%;
+  }
 }
 .about--info__text h4 {
   font-family: "Merriweather", sans-serif;
@@ -171,6 +296,16 @@
   flex-wrap: wrap;
   row-gap: 13px;
   column-gap: 15px;
+}
+@media screen and (max-width: 1440px) {
+  .works--images-container {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 480px) {
+  .works--images-container {
+    width: 100%;
+  }
 }
 .works--images-container__img {
   position: relative;
@@ -243,6 +378,16 @@
   row-gap: 13px;
   column-gap: 15px;
 }
+@media screen and (max-width: 1440px) {
+  .team--people-container {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 480px) {
+  .team--people-container {
+    width: 100%;
+  }
+}
 .team--people-container__img {
   position: relative;
   width: 370px;
@@ -294,6 +439,12 @@
   box-shadow: 5px 5px 5px rgba(231, 231, 231, 0.2588235294);
   opacity: 0;
 }
+@media screen and (max-width: 480px) {
+  .team--people-container__img .person-info {
+    width: 90%;
+    padding: 37px 10px 0;
+  }
+}
 .team--people-container__img .person-info h6 {
   font-family: "Merriweather", sans-serif;
   font-size: 20px;
@@ -334,6 +485,11 @@
   display: flex;
   flex-direction: row;
   column-gap: 15px;
+}
+@media screen and (max-width: 480px) {
+  .team--people-container__img .person-info .link {
+    justify-content: center;
+  }
 }
 .team--people-container__img .person-info .link a {
   position: relative;
@@ -389,11 +545,30 @@
   z-index: 8;
   background: linear-gradient(#f9fbfb 6%, rgba(255, 255, 255, 0.7137254902) 60%);
 }
+@media screen and (max-width: 1440px) {
+  .contacts .container .gradient {
+    width: 150%;
+    left: -20px;
+  }
+}
 .contacts--info {
   display: flex;
   justify-content: space-between;
   max-width: 1142px;
   margin: 188px auto 123px;
+}
+@media screen and (max-width: 1440px) {
+  .contacts--info {
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .contacts--info {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 15px;
+  }
 }
 .contacts--info__form {
   width: 90%;
@@ -404,6 +579,12 @@
   padding: 30px;
   display: flex;
   flex-direction: column;
+}
+@media screen and (max-width: 768px) {
+  .contacts--info__form {
+    width: 100%;
+    max-width: 600px;
+  }
 }
 .contacts--info__form input, .contacts--info__form textarea {
   width: 100%;
@@ -442,6 +623,11 @@
   letter-spacing: 2px;
   margin: 25px 0 0 1px;
 }
+@media screen and (max-width: 768px) {
+  .contacts--info__form--button {
+    align-self: center;
+  }
+}
 .contacts--info__form--button:hover {
   background: #00ffea;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.7137254902);
@@ -455,6 +641,12 @@
   padding: 27px 23px 18px 22px;
   display: flex;
   flex-direction: column;
+}
+@media screen and (max-width: 768px) {
+  .contacts--info__description {
+    width: 100%;
+    max-width: 600px;
+  }
 }
 .contacts--info__description p {
   font-size: 15px;
@@ -540,6 +732,11 @@
   max-width: 1200px;
   box-shadow: 0 0 30px #686868;
   cursor: default;
+}
+@media screen and (max-width: 1440px) {
+  .popup--img {
+    max-width: 90%;
+  }
 }
 .popup--close {
   position: absolute;
