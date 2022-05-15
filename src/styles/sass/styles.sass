@@ -19,6 +19,7 @@ $bg-team: #f9fbfb
   box-sizing: border-box
   font-family: $font-stack
   transition: all 0.3s linear
+  scroll-behavior: smooth  
 
 .container
   width: 100%
@@ -222,7 +223,7 @@ $bg-team: #f9fbfb
       width: 370px
       height: 440px
       overflow: hidden
-      cursor: pointer
+      cursor: default
       & img
         position: absolute
       & .person1
@@ -321,7 +322,106 @@ $bg-team: #f9fbfb
           opacity: 1
           &::before
             opacity: 1
-  
+
+.contacts
+  background: $bg-team
+  & .container
+    position: relative
+    overflow: hidden
+    background: #ffffffa1
+    height: 771px
+    & .bg
+      position: absolute
+      width: 1534px
+      left: -76px
+      top: -160px
+      z-index: 5
+    & .gradient
+      position: absolute
+      width: 100%
+      height: 100%
+      z-index: 8
+      background: linear-gradient($bg-team 6%, #ffffffb6 60%)
+  &--info
+    display: flex
+    justify-content: space-between
+    max-width: 1142px
+    margin: 188px auto 0
+    &__form
+      width: 90%
+      max-width: 614px
+      height: 460px
+      background: #021623ab
+      z-index: 10
+      padding: 30px
+      display: flex
+      flex-direction: column
+      & input, textarea
+        width: 100%
+        height: 46px
+        background-color: transparent
+        border: none
+        outline: none
+        border-bottom: 1px solid #ffffffb6
+        font-size: 15px
+        letter-spacing: -0.6px
+        color: #ffffffb6
+        padding-left: 4px
+        margin-bottom: 13px
+        &::placeholder
+          color: #ffffffb6
+      & textarea
+        height: 109px
+        margin-top: 15px
+        resize: none
+      &--button
+        width: 244px
+        height: 53px
+        border: none
+        border-radius: 2px
+        background: #6eeee398
+        cursor: pointer
+        font-size: 18px
+        font-weight: 600
+        color: $font-color
+        text-align: center
+        text-transform: uppercase
+        text-decoration: none
+        letter-spacing: 2px
+        margin: 25px 0 0 1px
+        &:hover
+          background: #00ffea
+          box-shadow: 0 0 10px #ffffffb6
+    &__description
+      width: 90%
+      max-width: 500px
+      height: 460px 
+      background: #021623ab
+      z-index: 10
+      padding: 27px 23px 18px 22px
+      display: flex
+      flex-direction: column 
+      & p
+        font-size: 15px
+        padding-left: 8px
+        margin-top: 5px
+        letter-spacing: -0.7px
+        color: #ffffffb6
+        &:nth-child(5)
+          margin-top: 29px          
+        & span
+          position: relative
+          top: 2px
+        & a
+          text-decoration: none
+          color: #ffffff54
+          &:hover
+            color: #ffffffb6
+      & #map
+        width: 100%
+        height: 302px
+        margin-top: 23px
+        
 .popup
   display: none
   position: fixed

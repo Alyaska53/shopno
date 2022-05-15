@@ -11,6 +11,7 @@
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
   transition: all 0.3s linear;
+  scroll-behavior: smooth;
 }
 
 .container {
@@ -244,7 +245,7 @@
   width: 370px;
   height: 440px;
   overflow: hidden;
-  cursor: pointer;
+  cursor: default;
 }
 .team--people-container__img img {
   position: absolute;
@@ -361,6 +362,123 @@
 }
 .team--people-container__img:hover .person-info::before {
   opacity: 1;
+}
+
+.contacts {
+  background: #f9fbfb;
+}
+.contacts .container {
+  position: relative;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.631372549);
+  height: 771px;
+}
+.contacts .container .bg {
+  position: absolute;
+  width: 1534px;
+  left: -76px;
+  top: -160px;
+  z-index: 5;
+}
+.contacts .container .gradient {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 8;
+  background: linear-gradient(#f9fbfb 6%, rgba(255, 255, 255, 0.7137254902) 60%);
+}
+.contacts--info {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1142px;
+  margin: 188px auto 0;
+}
+.contacts--info__form {
+  width: 90%;
+  max-width: 614px;
+  height: 460px;
+  background: rgba(2, 22, 35, 0.6705882353);
+  z-index: 10;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.contacts--info__form input, .contacts--info__form textarea {
+  width: 100%;
+  height: 46px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.7137254902);
+  font-size: 15px;
+  letter-spacing: -0.6px;
+  color: rgba(255, 255, 255, 0.7137254902);
+  padding-left: 4px;
+  margin-bottom: 13px;
+}
+.contacts--info__form input::placeholder, .contacts--info__form textarea::placeholder {
+  color: rgba(255, 255, 255, 0.7137254902);
+}
+.contacts--info__form textarea {
+  height: 109px;
+  margin-top: 15px;
+  resize: none;
+}
+.contacts--info__form--button {
+  width: 244px;
+  height: 53px;
+  border: none;
+  border-radius: 2px;
+  background: rgba(110, 238, 227, 0.5960784314);
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
+  color: #505050;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  margin: 25px 0 0 1px;
+}
+.contacts--info__form--button:hover {
+  background: #00ffea;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.7137254902);
+}
+.contacts--info__description {
+  width: 90%;
+  max-width: 500px;
+  height: 460px;
+  background: rgba(2, 22, 35, 0.6705882353);
+  z-index: 10;
+  padding: 27px 23px 18px 22px;
+  display: flex;
+  flex-direction: column;
+}
+.contacts--info__description p {
+  font-size: 15px;
+  padding-left: 8px;
+  margin-top: 5px;
+  letter-spacing: -0.7px;
+  color: rgba(255, 255, 255, 0.7137254902);
+}
+.contacts--info__description p:nth-child(5) {
+  margin-top: 29px;
+}
+.contacts--info__description p span {
+  position: relative;
+  top: 2px;
+}
+.contacts--info__description p a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.3294117647);
+}
+.contacts--info__description p a:hover {
+  color: rgba(255, 255, 255, 0.7137254902);
+}
+.contacts--info__description #map {
+  width: 100%;
+  height: 302px;
+  margin-top: 23px;
 }
 
 .popup {
