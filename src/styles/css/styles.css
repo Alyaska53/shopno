@@ -53,6 +53,9 @@
   border: 2px solid #505050;
   border-radius: 2px;
   margin-top: 138px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
 }
 .header--button a {
