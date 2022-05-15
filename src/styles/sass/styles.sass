@@ -329,7 +329,6 @@ $bg-team: #f9fbfb
     position: relative
     overflow: hidden
     background: #ffffffa1
-    height: 771px
     & .bg
       position: absolute
       width: 1534px
@@ -346,7 +345,7 @@ $bg-team: #f9fbfb
     display: flex
     justify-content: space-between
     max-width: 1142px
-    margin: 188px auto 0
+    margin: 188px auto 123px
     &__form
       width: 90%
       max-width: 614px
@@ -421,6 +420,42 @@ $bg-team: #f9fbfb
         width: 100%
         height: 302px
         margin-top: 23px
+
+.footer
+  background: $bg-dark
+  height: 315px
+  padding-top: 90px
+  &--nav
+    width: 200px
+    margin: 0px auto
+    & p
+      font-family: 'Raleway', sans-serif
+      font-size: 16px
+      text-transform: uppercase
+      text-align: center
+      color: #bbb8b9
+      margin-left: -4px
+    & .footer--nav__links
+      display: flex
+      justify-content: space-between
+      margin: 15px 0 0 -4px
+      & a
+        width: 45px
+        height: 40px
+        background: #424648
+        display: flex
+        justify-content: center
+        align-items: center
+        transition: all 0.3s linear
+        cursor: pointer
+        & svg
+          height: 24px
+          fill: #bbb8b9
+        &:hover
+          background: #00ffea
+          & svg
+            fill: $bg-dark
+          
         
 .popup
   display: none
