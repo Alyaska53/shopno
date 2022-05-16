@@ -530,7 +530,6 @@
 .contacts .container {
   position: relative;
   overflow: hidden;
-  background: rgba(255, 255, 255, 0.631372549);
 }
 .contacts .container .bg {
   position: absolute;
@@ -551,6 +550,21 @@
     width: 150%;
     left: -20px;
   }
+}
+.contacts .container .gradient-left, .contacts .container .gradient-right {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 8;
+  width: 5%;
+}
+.contacts .container .gradient-left {
+  left: 0;
+  background: linear-gradient(to right, #f9fbfb 6%, rgba(255, 255, 255, 0) 60%);
+}
+.contacts .container .gradient-right {
+  right: 0;
+  background: linear-gradient(to left, #f9fbfb 6%, rgba(255, 255, 255, 0) 60%);
 }
 .contacts--info {
   display: flex;
